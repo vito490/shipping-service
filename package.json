@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start_local": "set MICROS_PRODUCTS_URL=product-service-java.eu-gb.mybluemix.net/products node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -14,10 +15,13 @@
   "author": "",
   "license": "ISC",
   "jest": {
-  "testEnvironment": "node"
+    "testEnvironment": "node"
   },
   "bugs": {
     "url": "https://github.com/vito490/shipping-service/issues"
   },
-  "homepage": "https://github.com/vito490/shipping-service#readme"
+  "homepage": "https://github.com/vito490/shipping-service#readme",
+  "devDependencies": {
+    "sinon": "^7.4.2"
+  }
 }
